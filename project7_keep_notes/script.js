@@ -9,7 +9,6 @@ const updateLSData = () => {
     })
 
     localStorage.setItem('notes', JSON.stringify(notes));
-
 }
 
 const addNewNote = (text = "") => {
@@ -34,8 +33,15 @@ const addNewNote = (text = "") => {
     const textarea = note.querySelector('textarea');
 
     deleteButton.addEventListener('click', () => {
+        var confirmed = confirm("Are you sure to delete this");
+        if (confirmed) {
+
         note.remove();
         updateLSData();
+
+        }else {
+            alert("Deletion canceled.");
+        }
     })
 
     textarea.value = text;
