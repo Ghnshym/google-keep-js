@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>keep notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+     integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{
             margin: 0;
@@ -41,10 +43,12 @@
             float: left;
         }
         .btn1 {
-            width: auto;
-            height: 25px;
-            background-color: black;
-            color: aliceblue;
+            width: 30px;
+            height: 30px;
+            background-color: rgb(21, 196, 21);
+            border-radius: 30%;
+            color: rgb(236, 16, 64);
+            border: none;
             margin-top: 2px;
             margin-right: 2px;
             float: right;
@@ -54,22 +58,23 @@
             border: none;
             width: 100%;
             /* overflow-y: scroll; */
-            height: 117px;
+            height: 113px;
         }
         .hidden {
             display: none;
         }
         .savetext {
-            padding: 30px;
+            padding:  0 15px;
             width: 100%;
-            /* overflow: scroll; */
+            height: 100px;
+            overflow-y: scroll;
         }
       
     </style>
 </head>
 <body>
     <h1 class="header">Keep Note</h1>
-    <button class="addNote" id="add">Add Notes</button>
+    <button class="addNote" id="add"><i class="fas fa-greater-than"></i> Add Notes</button>
 
 
     <script src="./script.js"></script>

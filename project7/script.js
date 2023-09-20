@@ -18,15 +18,15 @@ const addNewNote = (text = "") => {
 
     const htmlData = `
     <div class="submain">
-    <button class="btn1" id="delete">delete</button>
-    <button class="btn1" id="edit">edit</button>
+    <button class="btn1" id="delete"><i class="fas fa-trash-alt"></i></button>
+    <button class="btn1" id="edit"><i class="fas fa-edit"></i></button>
 
     <div class="savetext ${text ? "" : "hidden"}"></div>
     <textarea  class="testarea ${text ? "hidden" : ""}">Write something here ..</textarea>
 
     </div>`;
     note.insertAdjacentHTML('afterbegin', htmlData);
-    // console.log(note);
+    // console.log(note)
 
     const editButton = note.querySelector('#edit');
     const deleteButton = note.querySelector('#delete');
