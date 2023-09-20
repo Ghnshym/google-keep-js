@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keep notes</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            height: 50px;
+            width: 100%;
+            background-color: rgb(16, 17, 17);
+            color: rgb(250, 246, 246);
+            padding-left: 15px;
+        }
+        .addNote{
+            height: auto;
+            width: auto;
+            padding: 5px;
+            background-color: black;
+            color: aliceblue;
+            margin-right: 45px;
+            margin-top: 20px;
+            float: right;
+        }
+        .note{
+            width: 100%; 
+            margin-top: 50px;
+            /* float: left;  */
+        }
+        .submain{
+            width : 24%;
+            border: 2px solid black;
+            margin: 5px;
+            float: left; 
+            height: 150px;
+            float: left;
+        }
+        .btn1 {
+            width: auto;
+            height: 25px;
+            background-color: black;
+            color: aliceblue;
+            margin-top: 2px;
+            margin-right: 2px;
+            float: right;
+            /* position: absolute; */
+        }
+        .testarea{
+            border: none;
+            width: 100%;
+            /* overflow-y: scroll; */
+            height: 117px;
+        }
+        .hidden {
+            display: none;
+        }
+        .savetext {
+            padding: 30px;
+            width: 100%;
+            /* overflow: scroll; */
+        }
+      
+    </style>
+</head>
+<body>
+    <h1 class="header">Keep Note</h1>
+    <button class="addNote" id="add">Add Notes</button>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

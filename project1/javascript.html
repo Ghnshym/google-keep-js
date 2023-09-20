@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="showMyName"></p>
+    <br>
+    <button id="btn">ClickTo</button> -->
+
+    <!-- end -->
+    <button onclick="myVar = setTimeout(myFunction, 2000)">Try it</button>
+    <button onclick="clearTimeout(myVar)">Try it</button>
+
+    <!-- end -->
+    
+    
+
+    <script>
+        const myName = document.querySelector('#showMyName');
+        const btn = document.querySelector('#btn');
+
+        const showMyName = () => {
+            myName.innerHTML = "Loading...";
+            setTimeout(() => {
+                myName.innerHTML = "Ghanshyam Kumar";
+            }, 2000);
+        }
+
+        btn.addEventListener('click', showMyName);
+
+        // end 
+
+        function myFunction(){
+            alert("Please enter");
+        }
+
+        // end 
+
+        
+
+
+    </script>
+</body>
+</html>
+

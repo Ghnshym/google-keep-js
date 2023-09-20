@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+
+    <script>
+        const conatiner = document.querySelector('#conatiner');
+        const request = new XMLHttpRequest();
+        request.open('GET', 'https://rapidapi.com/skyscanner/api/skyscanner-flight-search');
+        request.send();
+
+        request.addEventListener('load', function () {
+            console.log(this.responseText);
+            const [data] = JSON.parse(this.responseText);
+
+            const HtmlData = ` ${data.flag}  capital: ${data.capital} `;
+
+            container.insertAdjacentHTML("afterbegin",HtmalData);
+        })
+    </script>
+</body>
+</html>
